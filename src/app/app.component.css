@@ -1,0 +1,6 @@
+*{
+  min-width: 100% !important;
+}
+.app-header,html,body{
+  width: 100% !important;
+}
