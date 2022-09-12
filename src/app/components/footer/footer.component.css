@@ -1,12 +1,35 @@
 /* FOOTER */
-.footer {
-    
-    bottom: 0;
-    background-color: rgb(90, 89, 89);
-    width: 100%;
 
-}
 
-.footer img {
+
+footer .socials .social_link{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ footer .socials img{
     width: 30px;
+    height: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 5px;
+    
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+footer span a{
+    color: #5721f7;
+    text-decoration: none;
+}
+footer .socials p{
+    display: inline-block;
+    padding: 10px; 
+ 
+ }
+ footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
 }

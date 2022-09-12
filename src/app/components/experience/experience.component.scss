@@ -2,15 +2,17 @@
 
 
 .experience{
-    margin-top: 50px;
     border: 1px solid #5721f7;
     border-radius: 25px;
     width: 100%;
-    height: 500px;
     box-shadow: 0 0  30px #5721f7;
     background: linear-gradient(#2f1c68, #212529);
     z-index: 9999  !important;
     color: white;
+}
+
+.experience-content{
+    padding-bottom: 45px;
 }
 .experience-blur{
     -webkit-filter: blur(20px);
@@ -46,4 +48,25 @@
 .courses-container{
     display: flex;
     gap: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .container .experience-content{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (max-width: 530px) {
+
+    .courses-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
 }

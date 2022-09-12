@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IProyecto } from 'src/app/models/proyecto.interface';
+import { ProyectoService } from 'src/app/services/proyecto.service';
+
 
 @Component({
   selector: 'app-personal-projects',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonalProjectsComponent implements OnInit {
 
-  constructor() { }
+  listaProyectos: IProyecto[]= [];
+
+  constructor(private proyectoService: ProyectoService) { }
 
   ngOnInit(): void {
+    this.listaProyectos = this.proyectoService.obtenerProyectos();
   }
 
 }

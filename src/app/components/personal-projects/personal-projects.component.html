@@ -1,1 +1,27 @@
-<p>personal-projects works!</p>
+<div class="container proyecto" id="projects">
+<h1>Projects</h1>
+<div class="proyecto-content ">
+    <div class="row">
+    <div class="single-projects col-xl-4 col-sm-6 col-xs-12"  *ngFor="let proyecto of listaProyectos" >
+        <img src="{{proyecto.image}}" alt="" class="social_img" >
+        <div class="text-projects">
+        <h4>{{proyecto.name}}</h4>
+        <p>{{proyecto.description}}</p>
+        <div class="btn-project">
+            <div class="git-container">
+                <img src="./assets/imagenes/git.png" alt="" class="social_img" >
+                <a href='{{proyecto.btnGithub}}' target="_blank">Ver código</a>
+            </div>
+            <div class="page-container">  
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" alt="" class="social_img" > 
+                <a href='{{proyecto.btnPage}}' target="_blank" >Probar Proyecto</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+</div>
+
+
+</div>

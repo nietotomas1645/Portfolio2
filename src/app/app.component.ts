@@ -10,8 +10,8 @@ export class AppComponent {
   title = 'Portfolio';
 
   ngOnInit(){
-    AOS.init();
-    window.addEventListener('load',AOS.refresh)
+  AOS.init()
+  window.addEventListener('load',AOS.refresh)
   }
   
 

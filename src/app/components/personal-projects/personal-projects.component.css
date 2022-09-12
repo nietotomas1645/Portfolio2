@@ -1,0 +1,89 @@
+*{
+    color: white;
+}
+
+.proyecto{
+    padding-top: 145px;
+
+    
+}
+.proyecto h1{
+    text-align: center;
+}
+.proyecto-content{
+    display: flex;
+    margin-top: 30px;
+
+    
+}
+.proyecto-content img {
+   
+    object-fit: cover;
+    width:100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    z-index: -999;
+    height: 300px;
+   
+}
+.single-projects{
+    margin-top: 50px;
+   text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(#2f1c68, #212529);
+    width: 410px;
+    border: 1px solid #5721f7;
+    color: white;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.text-projects{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.proyecto-content .row {
+    gap: 30px;
+    justify-content: center;
+   
+}
+
+.btn-project{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+}
+.git-container{
+    border: 1px solid #5721f7;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 160px;
+}
+.page-container{
+    border: 1px solid #5721f7;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 160px;
+    
+}
+.git-container img{
+    width: 25px;
+    height: 25px;
+    margin-right: 11px;
+    
+}
+.page-container img{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+.single-projects:hover{
+    box-shadow: 0 0  15px #5721f7;
+    transform: scale(1.05);
+}
