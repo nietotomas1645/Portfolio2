@@ -3,11 +3,11 @@
 header{
 
     padding:12px 0;
-    background-color: #222;
+    background-color: #131313;
     position: fixed;
     width: 100%;
-    z-index: 9999;
-    box-shadow: 0px 0px  2px 2px rgb(55, 55, 55);
+    z-index: 9999999;
+    box-shadow: 0px 0px 4px 2px #000000;
   }
   .menu{
    margin-top: 10px;
@@ -24,7 +24,7 @@ header{
   
     display: inline-block;
   
-    margin-left: 24px;
+    margin-left: 30px;
   
     text-transform: uppercase;
   
@@ -33,12 +33,26 @@ header{
     list-style: none;
     text-decoration: none;
     color: #ffffff;
+    letter-spacing: 1.3px;
+    font-weight: 500;
   }
   .menu ul li a:hover{
-    color: #5721f7;
+    color: #EC9464;
     cursor: pointer;
     transition: 0.4s ease-in-out;
   }
+  .col-md-12.col-sm-9.col-9.text-end {
+    width: 100% !important;
+}
+
+
+.menu a:hover{
+  border-bottom: 2px solid #EC9464;
+  cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+
   @media(max-width: 999px){
   .menu{
     position: fixed;
@@ -46,8 +60,8 @@ header{
     top:64;
     width: 280px;
     height: 100%;
-    background: #222;
-    transition: 0.4s ease-in-out;
+    background: #131313;
+    transition: 0.3s ease-in-out;
   
   }
   .menu ul li {

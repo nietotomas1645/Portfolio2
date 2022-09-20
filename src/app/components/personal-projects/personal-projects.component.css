@@ -1,5 +1,5 @@
 *{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .proyecto{
@@ -9,6 +9,8 @@
 }
 .proyecto h1{
     text-align: center;
+    font-weight: 800;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
 }
 .proyecto-content{
     display: flex;
@@ -19,23 +21,29 @@
 .proyecto-content img {
    
     object-fit: cover;
-    width:100%;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    z-index: -999;
-    height: 300px;
+       /* object-fit: cover; */
+       width: 93%;
+       height: 57%;
+       margin-top: 16px;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+       z-index: -999;
+       height: 300px;
    
 }
 .single-projects{
     margin-top: 50px;
    text-align: center;
     border-radius: 25px;
-    background: linear-gradient(#2f1c68, #212529);
+    background: linear-gradient(#562AA0, #ec9464);
     width: 410px;
-    border: 1px solid #5721f7;
-    color: white;
+    border: 1px solid #b689ff;
+    color: rgb(0, 0, 0);
     padding-left: 0;
     padding-right: 0;
+    box-shadow: 0px 0px  7px #562AA0;
 }
 
 .text-projects{
@@ -59,13 +67,13 @@
     gap: 15px;
 }
 .git-container{
-    border: 1px solid #5721f7;
+    border: 2px solid #000000;
     border-radius: 8px;
     padding: 10px;
     min-width: 160px;
 }
 .page-container{
-    border: 1px solid #5721f7;
+    border: 2px solid #000000;
     border-radius: 8px;
     padding: 10px;
     min-width: 160px;
@@ -75,15 +83,57 @@
     width: 25px;
     height: 25px;
     margin-right: 11px;
+    margin-top: 0px;
     
 }
 .page-container img{
     width: 25px;
     height: 25px;
     margin-right: 8px;
+    margin-top: 0px;
 }
 
 .single-projects:hover{
-    box-shadow: 0 0  15px #5721f7;
+    box-shadow: 0px 0px  20px #562AA0;
     transform: scale(1.05);
+}
+
+.btn-project a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.btn-project a:hover{
+    color: #562AA0;
+}
+
+h1 span{
+    color: #562AA0;
+}
+h1 .orange{
+    color: #ec9464;
+}
+@media (max-width: 424px){
+    .single-projects{
+        width: 368px;
+    }
+    .proyecto{
+        padding-top: 70px !important;
+    }
+    .proyecto h1{
+        margin-bottom: 5px !important;
+    }
+}
+
+@media (max-width: 384px){
+    .single-projects{
+        width: 310px;
+    }
+    .git-container{
+        min-width: 124px;
+    }
+    .page-container{
+       
+        min-width: 124px;
+    }
+    
 }

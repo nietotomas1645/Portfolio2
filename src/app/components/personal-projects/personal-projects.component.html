@@ -1,20 +1,20 @@
 <div class="container proyecto" id="projects">
-<h1>Projects</h1>
+<h1><span>P</span>rojec<span class="orange">ts</span></h1>
 <div class="proyecto-content ">
     <div class="row">
-    <div class="single-projects col-xl-4 col-sm-6 col-xs-12"  *ngFor="let proyecto of listaProyectos" >
+    <div class="single-projects col-xl-6 col-sm-6 col-xs-12"  *ngFor = "let proyecto of listaProyectos" data-aos="fade-up" data-aos-duration="1500">
         <img src="{{proyecto.image}}" alt="" class="social_img" >
         <div class="text-projects">
-        <h4>{{proyecto.name}}</h4>
+        <h4> {{proyecto.name}} </h4>
         <p>{{proyecto.description}}</p>
         <div class="btn-project">
             <div class="git-container">
                 <img src="./assets/imagenes/git.png" alt="" class="social_img" >
-                <a href='{{proyecto.btnGithub}}' target="_blank">Ver código</a>
+                <a href='{{proyecto.btnGithub}}' target="_blank">View code</a>
             </div>
-            <div class="page-container">  
+            <div class="page-container" *ngIf = "proyecto.btnPage">  
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Google_Chrome_icon_%28February_2022%29.svg" alt="" class="social_img" > 
-                <a href='{{proyecto.btnPage}}' target="_blank" >Probar Proyecto</a>
+                <a href='{{proyecto.btnPage}}' target="_blank" >View page</a>
             </div>
         </div>
         </div>

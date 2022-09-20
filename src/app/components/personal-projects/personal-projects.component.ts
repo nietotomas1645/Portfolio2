@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PROYECTOS } from 'src/app/mocks/proyecto.mock';
 import { IProyecto } from 'src/app/models/proyecto.interface';
 import { ProyectoService } from 'src/app/services/proyecto.service';
 
@@ -16,6 +17,7 @@ export class PersonalProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     this.listaProyectos = this.proyectoService.obtenerProyectos();
+    
   }
 
 }

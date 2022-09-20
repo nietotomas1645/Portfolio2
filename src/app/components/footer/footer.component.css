@@ -19,8 +19,9 @@ footer span a:hover{
     text-decoration: underline;
 }
 footer span a{
-    color: #5721f7;
+    color: #ec9464;
     text-decoration: none;
+    font-weight: 600;
 }
 footer .socials p{
     display: inline-block;
@@ -28,8 +29,16 @@ footer .socials p{
  
  }
  footer{
-    background: #111;
-    padding: 15px 23px;
+    background: #131313;
+    padding: 17px 23px;
     color: #fff;
+    position: absolute;
     text-align: center;
+    width: 100%;
 }
+
+.heart{
+    color: #562AA0;
+}
+/* Footer Styles*/
+

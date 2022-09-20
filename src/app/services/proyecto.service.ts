@@ -6,11 +6,13 @@ import { IProyecto } from '../models/proyecto.interface';
   providedIn: 'root'
 })
 export class ProyectoService {
-
+  listaProyectos: IProyecto[]= [];
   constructor() { }
 
   obtenerProyectos(): IProyecto[]{
     return PROYECTOS;
   }
+
+
 
 }

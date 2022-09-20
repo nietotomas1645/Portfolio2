@@ -1,39 +1,41 @@
-/* ANIMACIONES */
-.animated-effect{
+/* burbujas */
+
+.burbuja{
     border-radius: 50%;
-    background: #5721f7;
-    opacity: .3;    
+    background: #fff;
+    opacity: .3;
+    z-index: 1 !important;
     position: absolute;
-    bottom:  -1400px;
-    z-index: -999 !important;
-    animation: animated-effects 3s linear infinite ;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
 }
 
-.animated-effect:nth-child(1){
+.burbuja:nth-child(1){
     width: 80px;
     height: 80px;
     left: 5%;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-delay: 3s;
 }
 
-.animated-effect:nth-child(2){
+.burbuja:nth-child(2){
     width: 100px;
     height: 100px;
     left: 35%;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-delay: 5s;
 }
 
-.animated-effect:nth-child(3){
+.burbuja:nth-child(3){
     width: 20px;
     height: 20px;
     left: 15%;
-    animation-duration: 5s;
+    animation-duration: 1.5s;
     animation-delay: 7s;
 }
 
-.animated-effect:nth-child(4){
+.burbuja:nth-child(4){
     width: 50px;
     height: 50px;
     left: 90%;
@@ -41,7 +43,7 @@
     animation-delay: 3s;
 }
 
-.animated-effect:nth-child(5){
+.burbuja:nth-child(5){
     width: 70px;
     height: 70px;
     left: 65%;
@@ -49,7 +51,7 @@
     animation-delay: 1s;
 }
 
-.animated-effect:nth-child(6){
+.burbuja:nth-child(6){
     width: 20px;
     height: 20px;
     left: 50%;
@@ -57,7 +59,7 @@
     animation-delay: 5s;
 }
 
-.animated-effect:nth-child(7){
+.burbuja:nth-child(7){
     width: 20px;
     height: 20px;
     left: 50%;
@@ -65,7 +67,7 @@
     animation-delay: 5s;
 }
 
-.animated-effect:nth-child(8){
+.burbuja:nth-child(8){
     width: 100;
     height: 100px;
     left: 52%;
@@ -73,7 +75,7 @@
     animation-delay: 5s;
 }
 
-.animated-effect:nth-child(9){
+.burbuja:nth-child(9){
     width: 65px;
     height: 65px;
     left: 51%;
@@ -81,7 +83,7 @@
     animation-delay: 2s;
 }
 
-.animated-effect:nth-child(10){
+.burbuja:nth-child(10){
     width: 40px;
     height: 40px;
     left: 35%;
@@ -90,9 +92,9 @@
 }
 
 
-@keyframes animated-effects{
+@keyframes burbujas{
     0%{
-        bottom: -1400px;
+        bottom: 320px;
         opacity: 0;
     }
     30%{
